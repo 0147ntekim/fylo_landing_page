@@ -1,13 +1,123 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500&family=Open+Sans&family=Raleway&family=Rubik:ital,wght@0,400;1,300;1,400&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222931;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.header {
+  background: rgb(61,69,82);
+  background: linear-gradient(180deg, rgba(61,69,82,1) 50%, rgba(24, 31, 42) 50%);
+}
+
+@media (device-width:375px) and (device-height:667px){
+  .header {
+    background: rgb(61,69,82);
+    background: linear-gradient(180deg, rgba(61,69,82,1) 65%, rgba(24, 31, 42) 35%);
+  }
+
+  .heading-one {
+    font-size: 22px !important;
+  }
+
+  .paragraph {
+    font-size: 14px !important;
+  }
+
+  .cssTop{
+    top: 45% !important;
+  }
+}
+
+@media (device-width:414px) and (device-height:736px) {
+  .headerTwo{
+    background: rgb(61,69,82);
+    background: linear-gradient(180deg, rgba(61,69,82,1) 68%, rgba(24, 31, 42) 32%);
+  }
+  .heading-one{
+    font-size: 22px;
+  }
+
+  .cssTop{
+    top: 48% !important;
+  }
+}
+
+@media (min-width:500px){
+  .headerTwo{
+    background: rgb(61,69,82);
+    background: linear-gradient(180deg, rgba(61,69,82,1) 85%, rgba(24, 31, 42) 15%);
+  }
+}
+@media (device-width:540px){
+  .headerTwo{
+    background: rgb(61,69,82);
+    background: linear-gradient(180deg, rgba(61,69,82,1) 82%, rgba(24, 31, 42) 18%);
+  }
+}
+
+@media (min-width:700px){
+  .headerTwo {
+    background: rgb(61,69,82);
+    background: linear-gradient(180deg, rgba(61,69,82,1) 88%, rgba(24, 31, 42) 12%);
+  }
+}
+
+@media (min-width:1024px){
+  .headerTwo{
+    background: rgb(61,69,82);
+    background: linear-gradient(180deg, rgba(61,69,82,1) 100%, rgba(24, 31, 42) 0%);
+  }
+}
+
+
+.intro-img {
+  background-image: url(./images/illustration-intro.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.curvyImage {
+  background-image: url(./images/bg-curvy-mobile.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+@media(min-width:500px){
+  .curvyImage {
+    background-image: url(./images/bg-curvy-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.bordering{
+  
+  border-bottom: 5px solid #62e0d9;
+}
+
+.testimonials {
+  background-color: hsl(219, 30%, 18%)
+  ;
 }
